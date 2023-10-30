@@ -5,10 +5,10 @@ public class Humain {
 	private String boissonFav;
 	protected int argent;
 	
-	public Humain(String nom, String boissonFav, int argent) {
+	public Humain(String nom,String boissonFav,int argent) {
 		this.nom = nom;
-		this.boissonFav = boissonFav;
 		this.argent = argent;
+		this.boissonFav=boissonFav;
 	}
 	
 	public String getNom() {
@@ -18,7 +18,7 @@ public class Humain {
 		return argent;
 	}
 	
-	private String parler() {
+	protected String parler() {
 		return ("("+nom+") - ");
 	}
 	
@@ -27,15 +27,15 @@ public class Humain {
 	}
 	
 	public void boire() {
-		System.out.println(parler()+" Mmmm, un bon verre de "+boissonFav+" ! GLOUGLOU !");
+		System.out.println(parler()+"Mmmm, un bon verre de "+boissonFav+" ! GLOUGLOU !");
 	}
 	
 	public void acheter(String bien,int prix) {
 		if (argent>=prix) {
-			System.out.println(parler()+"J'ai "+argent+" sous en poche. Je vais pouvoir m'offrir "+ bien +" à "+prix);
+			System.out.println(parler()+"J'ai "+argent+" sous en poche. Je vais pouvoir m'offrir "+ bien +" ï¿½ "+prix);
 			argent-=prix;
 		} else {
-			System.out.println(parler()+"Je n'ai plus que "+argent+" sous en poche. Je ne peux meme pas m'offir "+bien+" à "+prix);
+			System.out.println(parler()+"Je n'ai plus que "+argent+" sous en poche. Je ne peux meme pas m'offir "+bien+" ï¿½ "+prix);
 		}
 		
 	}
