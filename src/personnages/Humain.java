@@ -32,10 +32,10 @@ public class Humain {
 	
 	public void acheter(String bien,int prix) {
 		if (argent>=prix) {
-			System.out.println(parler()+"J'ai "+argent+" sous en poche. Je vais pouvoir m'offrir "+ bien +" � "+prix);
+			System.out.println(parler()+"J'ai "+argent+" sous en poche. Je vais pouvoir m'offrir "+ bien +" a "+prix);
 			argent-=prix;
 		} else {
-			System.out.println(parler()+"Je n'ai plus que "+argent+" sous en poche. Je ne peux meme pas m'offir "+bien+" � "+prix);
+			System.out.println(parler()+"Je n'ai plus que "+argent+" sous en poche. Je ne peux meme pas m'offir "+bien+" a "+prix);
 		}
 		
 	}
