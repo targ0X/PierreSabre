@@ -13,7 +13,7 @@ public class Commercant extends Humain {
 		return argent;
 	}
 	public void recevoir(int money) {
-		System.out.println(super.parler()+money+" sous ! Je te remercie généreux donateur!");
+		System.out.println(super.parler()+money+" sous ! Je te remercie genereux donateur!");
 		argent+=money;
 	}
 }
